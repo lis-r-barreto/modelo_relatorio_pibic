@@ -1,0 +1,150 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{verbatim}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{cite}
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+\usepackage{makeidx}
+\usepackage{helvet}
+\usepackage{graphicx}
+\usepackage{sectsty}
+\usepackage{tocbibind}
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+
+
+
+
+% Para definir a fonte da seção
+\sectionfont{\fontsize{12}{12}\selectfont}
+\subsectionfont{\fontsize{11}{11}\selectfont}
+
+\input{commands}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[tocflat]{tocstyle}
+
+
+
+\usetocstyle{standard}
+
+
+
+\makeatletter
+\renewcommand\tableofcontents{
+  \null\hfill\textbf{\Large\contentsname}\hfill\null\par
+  \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}
+  \@starttoc{toc}
+}
+\makeatother
+
+\author{COPES - UFS}
+\title{Modelo_Relatorio_Parcial}
+\date{}
+%\Marginsize marginsize { 1 centímetro } {2 } { 4 em em} { 6 pt } 
+
+\begin{document}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.2]{recorte.png}
+
+  \end{figure}
+%%--CABEÇALHO--%%
+
+ \begin{center}
+ 
+ \normalsize \textbf{SERVIÇO PÚBLICO FEDERAL\\ 
+UNIVERSIDADE FEDERAL DE SERGIPE\\ 
+PRÓ-REITORIA DE PÓS-GRADUAÇÃO E PESQUISA}
+\vspace{10mm} 
+
+\normalsize
+PROGRAMA INSTITUCIONAL DE BOLSAS DE INICIAÇÃO CIENTÍFICA – PIBIC\\ OU\\
+PROGRAMA DE INICIAÇÃO CIENTÍFICA VOLUNTÁRIA – PIBICVOL
+
+%(NÃO IDENTIFICAR O DISCENTE E O ORIENTADOR)
+
+\vspace{20mm}
+
+\textbf{\Large  Título do projeto\\ \normalsize Título do plano de trabalho}
+
+\vspace{19mm}
+ {\normalsize Área do conhecimento: \\
+Subárea do conhecimento: \\
+Especialidade do conhecimento: \\}
+\vspace{19mm}
+
+{\normalsize Relatório Parcial\\
+Período da bolsa: de (mês e ano) a (mês e ano)}
+\vspace{10mm}
+
+ {\large Este projeto é desenvolvido com bolsa de iniciação científica}
+\vspace{10mm}
+
+\large{
+PIBIC/COPES\\
+\\ou\\
+PIBIC/CNPq
+\\ou\\
+PIBIC/FAPITEC
+\\ou\\
+PIBICVOL\\}
+
+
+ \end{center}
+ 
+ 
+ 
+
+
+ 
+\newpage
+
+
+ 
+ \begin{flushleft}
+ 
+\tableofcontents 
+
+ 
+
+
+
+
+
+\end{flushleft}
+\newpage
+
+\section{Atividade Realizadas}
+% Please add the following required packages to your document preamble:
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+
+
+
+
+\subsection{Exemplo de Subseção}
+\cite{narasiman2011improving}
+\section{Outras Atividades}
+\section{Revisão da Literatura}
+\section{Metodologia}
+\section{Resultados Preliminares}
+\newpage
+
+
+\bibliography{refs.bib}{}
+
+
+
+
+\end{document}
